@@ -1,6 +1,7 @@
 ﻿using backend.Controllers.Models;
 using backend.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace backend.Controllers
 {
@@ -19,6 +20,13 @@ namespace backend.Controllers
             await _backendDbContext.Categories.AddAsync(category);
             await _backendDbContext.SaveChangesAsync();
             return Ok(category);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllCategories()
+        {
+            var categories = await _backendDbContext.Categories.ToListAsync();
+            return Ok(categories);
         }
     }
 }

@@ -58,9 +58,10 @@ F:\NORBI\project_licenta\backend\backend\backend\obj\Debug\net6.0\staticwebasset
 F:\NORBI\project_licenta\backend\backend\backend\obj\Debug\net6.0\staticwebassets.build.json
 F:\NORBI\project_licenta\backend\backend\backend\obj\Debug\net6.0\staticwebassets.development.json
 F:\NORBI\project_licenta\backend\backend\backend\obj\Debug\net6.0\scopedcss\bundle\backend.styles.css
-F:\NORBI\project_licenta\backend\backend\backend\obj\Debug\net6.0\backend.csproj.CopyComplete
 F:\NORBI\project_licenta\backend\backend\backend\obj\Debug\net6.0\backend.dll
 F:\NORBI\project_licenta\backend\backend\backend\obj\Debug\net6.0\refint\backend.dll
 F:\NORBI\project_licenta\backend\backend\backend\obj\Debug\net6.0\backend.pdb
 F:\NORBI\project_licenta\backend\backend\backend\obj\Debug\net6.0\backend.genruntimeconfig.cache
 F:\NORBI\project_licenta\backend\backend\backend\obj\Debug\net6.0\ref\backend.dll
+F:\NORBI\project_licenta\backend\backend\backend\obj\Debug\net6.0\backend.sourcelink.json
+F:\NORBI\project_licenta\backend\backend\backend\obj\Debug\net6.0\backend.csproj.Up2Date
