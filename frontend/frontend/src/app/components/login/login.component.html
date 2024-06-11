@@ -1,0 +1,23 @@
+<form #f="ngForm" 
+  *ngIf="!isLoggedIn; else logoutTemplate"
+    (ngSubmit)="loginClient()">
+    <div class="form-element">
+        <label for="username">Enter your username:</label>
+        <section>
+          <input type="text" id="username"
+          name="username" [(ngModel)]="credentials[0]">
+        </section>
+      </div>
+      <div class="form-element">
+        <label for="password">Enter your password:</label>
+        <section>
+          <input type="password" id="password" name="inputField"
+          name="password" [(ngModel)]="credentials[1]">
+        </section>
+      </div>
+      <button class="submit">Login</button>
+</form>
+
+<ng-template #logoutTemplate>
+  <button class="lo-btn" (click)="logoutClient()">Logout</button>
+</ng-template>

@@ -1,0 +1,26 @@
+<br>
+<form>
+  <div class="card" *ngFor="let adr of clientAddresses; let i = index">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <label>City:</label>
+        <input type="text" [class.disabled]="!editingAddress || adr !== editingAddress" [(ngModel)]="adr.city" name="city_{{i}}" class="form-control">
+      </li>
+      <li class="list-group-item">
+        <label>Street:</label>
+        <input type="text" [class.disabled]="!editingAddress || adr !== editingAddress" [(ngModel)]="adr.street" name="street_{{i}}" class="form-control">
+      </li>
+      <li class="list-group-item">
+        <label>Number:</label>
+        <input type="text" [class.disabled]="!editingAddress || adr !== editingAddress" [(ngModel)]="adr.number" name="number_{{i}}" class="form-control">
+      </li>
+    </ul>
+    <div class="card-footer">
+      <button class="submit" (click)="toggleEditMode(editingAddress ? null : adr)">
+        {{ editingAddress === adr ? 'Save' : 'Edit' }}
+      </button>
+
+      <button class="danger" [hidden]="editingAddress !== adr"  (click)="deleteAddress()">Delete</button>
+    </div>
+  </div>
+</form>

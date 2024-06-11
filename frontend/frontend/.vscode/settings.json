@@ -1,0 +1,4 @@
+{
+    "accessibility.verbosity.terminal": true,
+    "terminal.integrated.cwd": "${workspaceFolder}"
+}

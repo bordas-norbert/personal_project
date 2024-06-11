@@ -1,0 +1,17 @@
+<div class="card"
+  *ngFor="let product of cartProducts; let i = index"
+  [ngClass]="{'top-card': i < 5}"
+  >
+  <img class="card-img-top card-img" src="../../../../assets/products/product_{{pictureIndexes[i]}}.jpg" alt="">
+    <div class="card-body">
+      <h5 class="card-title">{{ product[0].name}}</h5>
+      <p class="card-text">{{product[0].unitPrice}}</p>
+      <button class="btn btn-danger" (click)="removeProductFromCart(product[0], pictureIndexes[i])">Delete</button>
+      <input #quantityField type="number"(input)="activateButton()" placeholder="{{product[1]}}">
+      <button [disabled]="disabledButton" (click)="updateQuantityFor(product[0],quantityField.value)" class="btn btn-warning" >Update Quantity</button>
+    </div>
+  </div>
+<br>
+<button class="btn-pay" (click)="navigateToPlaceOrder()"> 
+  Place order for {{totalCartValue.toFixed(2)}}
+</button>

@@ -1,0 +1,13 @@
+
+  <div class="card"
+  *ngFor="let product of productsArray; let i = index"
+  [ngClass]="{'top-card': i < 4}"
+  >
+  <img class="card-img-top card-img" src="../../../../assets/products/product_{{product[1]}}.jpg" alt="">
+    <div class="card-body">
+      <h5 class="card-title">{{ product[0].name }}</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <button class="btn btn-primary" (click)="addToCart(product[0],quantityInput.value,i)">Order</button> 
+      <input type="number" min="1" #quantityInput>
+    </div>
+  </div>

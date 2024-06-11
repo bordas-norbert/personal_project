@@ -1,0 +1,20 @@
+
+<div class="comp-container">
+    <form >
+        <div class="container">
+            <section *ngFor="let product of cartProducts">
+                {{product[0].name}}: {{product[0].unitPrice}} x {{product[1]}} = {{(product[0].unitPrice * product[1]).toFixed(2)}}
+            </section>
+            Total: {{totalCartValue.toFixed(2)}}
+        </div>
+        <textarea class="area-size" maxlength="200" rows="8" cols="25" #comments></textarea>
+        <button class="submit" (click)="placeOrder(comments.value)">Place Order</button>
+        <section class="alert-msg" *ngIf="!addressWasChosen && buttonWasTouched">Please choose a shipping address</section>
+    </form>
+    <div class="addresses-container">Choose one of your addresses:
+        <section (click)="chooseAddress(address)" *ngFor="let address of clientAddresses">
+            City: {{address.city}} Street: {{address.street}} Number: {{address.number}}
+        </section>
+        <section [(ngModel)]="chosenAddress">Shipping Address: {{chosenAddress}}</section>
+    </div>
+</div>

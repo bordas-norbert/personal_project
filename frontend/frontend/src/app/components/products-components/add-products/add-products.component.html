@@ -1,0 +1,32 @@
+<form #f="ngForm"  
+    (ngSubmit)="addProduct()">
+    <div class="form-element">
+        <label for="categoryid">Enter product category id:</label>
+        <section>
+          <input type="text" id="categoryid"
+          name="categoryid" [(ngModel)]="currentProduct.categoryId">
+        </section>
+      </div>
+    <div class="form-element">
+        <label for="name">Enter product name:</label>
+        <section>
+          <input type="text" id="name"
+          name="name" [(ngModel)]="currentProduct.name">
+        </section>
+      </div>
+      <div class="form-element">
+        <label for="quantity">Enter quantity in stock:</label>
+        <section>
+          <input type="text" id="quantity" name="inputField"
+          name="quantity" [(ngModel)]="currentProduct.quantityInStock">
+        </section>
+      </div>
+      <div class="form-element">
+        <label for="unitprice">Enter the unit price:</label>
+        <section>
+          <input type="number" id="unitprice"
+          name="unitprice" [(ngModel)]="currentProduct.unitPrice">
+        </section>
+      </div>
+      <button class="submit">Add</button>
+</form>

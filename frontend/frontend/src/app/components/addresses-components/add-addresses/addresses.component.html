@@ -1,0 +1,30 @@
+<div class="container">
+
+  <button type="button" (click)="changeShowComponent()">Add Address</button>
+  <form #f="ngForm" 
+  *ngIf="isLoggedIn && showComponent"  
+  (ngSubmit)="addAddress()">
+  <div class="form-element">
+    <label for="city">Enter your"city:</label>
+    <section>
+      <input type="text" id="city"
+      name="city" [(ngModel)]="clientAddress.city">
+    </section>
+  </div>
+  <div class="form-element">
+    <label for="street">Enter your street:</label>
+    <section>
+      <input type="text" id="street" name="inputField"
+      name="street" [(ngModel)]="clientAddress.street">
+    </section>
+  </div>
+  <div class="form-element">
+    <label for="number">Enter your number:</label>
+    <section>
+      <input type="number" id="number" name="inputField"
+      name="number" [(ngModel)]="clientAddress.number">
+    </section>
+  </div>
+  <button class="submit">Add</button>
+</form>
+</div>

@@ -1,0 +1,41 @@
+.comp-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container {
+    margin-top: 105px;
+    margin-right: auto;
+    background-color: aliceblue;
+    width: 20rem;
+}
+button {
+    display: block;
+    margin-left: 223px;
+}
+form {
+    grid-column: 1/2;
+}
+textarea {
+    margin-left: 223px;
+    resize: none;
+}
+.addresses-container {
+    width: 15rem;
+    margin-top: 105px;
+    grid-column: 2/3;
+    background-color: aliceblue;
+}
+.addresses-container section:hover:not(:last-child) {
+    background-color: aqua;
+    cursor:pointer;
+    user-select: none;
+}
+.area-size {
+    width: 15rem;
+}
+
+.alert-msg {
+    background-color: red;
+    display: inline;
+    margin-left: 223px;
+}

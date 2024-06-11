@@ -1,0 +1,38 @@
+<div class="navbar bg-color">
+  <ul class="container">
+    <li><a href="#" class="brand">Eshop</a></li>
+    <li *ngIf="isAdminLoggedIn()"><a [routerLink]="['clients']">Clients</a></li>
+    <li *ngIf="isAdminLoggedIn()"><a [routerLink]="['add-products']">Add Products</a></li>
+    <li *ngIf="isLoggedIn()"><a [routerLink]="['products']">Products</a></li>
+    <li><a [routerLink]="['login']">Login</a></li>
+    <li *ngIf="isLoggedIn()"><a [routerLink]="['addresses']">Adresses</a></li>
+    <li><a *ngIf="!isLoggedIn()" [routerLink]="['signup']">Signup</a></li>
+    
+    <li class="spacer"></li>
+    <li class="icon-container">
+      <img class ="user-icon" src="assets/navbar/usericon.png" alt="User icon">
+    </li>
+    <li *ngIf="isLoggedIn()">
+      <img src="../../../assets/cart-icon.png" class="cart-icon" [routerLink]="['list-cart']">
+      <section class="counter"> {{ cartCount }}</section>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="urlEndsWithProduct" 
+ class="sidebar d-flex flex-column bg-color" style="width: 180px; height: 100vh; position: fixed">
+    
+    
+  <ul class="nav nav-pills flex-column mb-auto bg-color">
+   
+    <li>
+      <p class="fp"> Filters: </p>
+      <p class="fp"> Category: </p>
+      <input placeholder="Category..." class="fi" type="text" (keyup)="getClosestCategoryNames(categoryInput.value)"
+      #categoryInput>
+      <app-category-dropdown *ngIf="categoryNamesMatchingInput.length !== 0" [categoryNames]="categoryNamesMatchingInput"></app-category-dropdown>
+    </li>
+    
+  </ul>
+  
+</div>
