@@ -8,7 +8,7 @@
     background-color: aliceblue;
     width: 20rem;
 }
-button {
+.order-button {
     display: block;
     margin-left: 223px;
 }
@@ -38,4 +38,11 @@ textarea {
     background-color: red;
     display: inline;
     margin-left: 223px;
+}
+.coupon-input {
+    margin-top: 5px;
+}
+button:v-button {
+    display: block;
+    margin-left: 0px;
 }

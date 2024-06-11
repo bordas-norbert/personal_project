@@ -13,8 +13,13 @@ import { AddProductsComponent } from './components/products-components/add-produ
 import { ListProductsComponent } from './components/products-components/list-products/list-products.component';
 import { ListCartComponent } from './components/shopping-cart/list-cart/list-cart.component';
 import { OrderPlaceComponent } from './components/order-place/order-place.component';
+import { SpinningWheelComponent } from './components/spinning-wheel/spinning-wheel.component';
 
 const routes: Routes = [
+  {
+    path: 'spinning-wheel',
+    component: SpinningWheelComponent
+  },
   {
     path: 'add-products',
     component:AddProductsComponent

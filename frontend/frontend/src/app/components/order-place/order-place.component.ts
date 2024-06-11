@@ -1,3 +1,4 @@
+import { CouponsService } from 'src/app/services/coupons.service';
 import { Order } from './../../models/order.model';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
@@ -24,7 +25,7 @@ export class OrderPlaceComponent {
   addressWasChosen: boolean = false;
   buttonWasTouched: boolean = false;
   constructor(private router: Router, private cartService: CartService, private addressService: AddressesService,
-              private ordersService: OrdersService) {  }
+              private ordersService: OrdersService, private couponsService: CouponsService) {  }
   
   ngOnInit() {
     this.cartProducts = this.cartService.getItemsFromCart();
@@ -37,6 +38,19 @@ export class OrderPlaceComponent {
       }
     })
     
+  }
+  validateCoupon(couponCode: string) {
+    let params: string[] = []
+    params.push(localStorage.getItem('clientId') as string)
+    params.push(couponCode)
+    this.couponsService.validateCoupon(params).subscribe({
+      next: (result) => {
+        this.totalCartValue = this.totalCartValue - (this.totalCartValue / Number(result))
+      },
+      error: () => {
+        alert('Coupon already used or not valid')
+      }
+    })
   }
 
   chooseAddress(adr: Address) {
@@ -63,9 +77,13 @@ export class OrderPlaceComponent {
     if(this.addressWasChosen === false) return;
     this.orderComment = comment
     this.constructOrderRequest();
+
     this.ordersService.AddOrder(this.orderRequest as OrderRequest).subscribe()
     this.cartService.emptyCart()
-    this.router.navigate(['/'])
+    if(this.totalCartValue > 250)
+      this.router.navigate(['spinning-wheel'])
+    else
+      this.router.navigate(['/'])
   }
 
 }

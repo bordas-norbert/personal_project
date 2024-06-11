@@ -15,7 +15,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class NavbarComponent {
   imageUrl: string = "usericon.jpg";
-
+  spinsRemaining: number = 0;
   private categoryArraySubject = new BehaviorSubject<Category[]>([])
   categoryNames: string[] = []
   cartCount: number = 0;
@@ -23,7 +23,8 @@ export class NavbarComponent {
   private trie: Trie = new Trie();
   categoryNamesMatchingInput: string[] = []
   categoryFilter: string= ""
-  constructor(private cartService: CartService,private router: Router, private service: ClientsService, private categoryService: CategoriesService) {}
+  constructor(private cartService: CartService, private router: Router, 
+              private service: ClientsService, private categoryService: CategoriesService) {}
 
   isLoggedIn() {
     return this.service.isLoggedIn();

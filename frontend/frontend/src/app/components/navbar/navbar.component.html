@@ -7,6 +7,7 @@
     <li><a [routerLink]="['login']">Login</a></li>
     <li *ngIf="isLoggedIn()"><a [routerLink]="['addresses']">Adresses</a></li>
     <li><a *ngIf="!isLoggedIn()" [routerLink]="['signup']">Signup</a></li>
+    <li><a *ngIf="isLoggedIn()" [routerLink]="['spinning-wheel']">Wheel</a></li>
     
     <li class="spacer"></li>
     <li class="icon-container">

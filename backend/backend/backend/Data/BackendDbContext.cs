@@ -20,6 +20,8 @@ namespace backend.Data
         public DbSet<Orders> Orders { get; set; }
         public DbSet<OrderProducts> OrderProducts { get; set; }
 
+        public DbSet<Coupons> Coupons { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseLoggerFactory(_loggerFactory);
@@ -50,6 +52,12 @@ namespace backend.Data
 
             modelBuilder.Entity<OrderProducts>()
             .HasKey(op => new { op.OrderId, op.ProductId });
+
+            modelBuilder.Entity<Coupons>().HasKey(c => c.CouponId);
+            modelBuilder.Entity<Coupons>().
+                HasOne<Clients>()
+                .WithMany()
+                .HasForeignKey(a => a.ClientId);
         }
 
     }

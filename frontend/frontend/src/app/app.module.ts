@@ -20,6 +20,7 @@ import { ListCartComponent } from './components/shopping-cart/list-cart/list-car
 import { CategoryComponent } from './components/category/category.component';
 import { CategoryDropdownComponent } from './components/category-dropdown/category-dropdown.component';
 import { OrderPlaceComponent } from './components/order-place/order-place.component';
+import { SpinningWheelComponent } from './components/spinning-wheel/spinning-wheel.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { OrderPlaceComponent } from './components/order-place/order-place.compon
     ListCartComponent,
     CategoryComponent,
     CategoryDropdownComponent,
-    OrderPlaceComponent
+    OrderPlaceComponent,
+    SpinningWheelComponent
   ],
   imports: [
     BrowserModule,
