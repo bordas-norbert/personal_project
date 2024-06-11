@@ -28,5 +28,12 @@ namespace backend.Controllers
             var categories = await _backendDbContext.Categories.ToListAsync();
             return Ok(categories);
         }
+        [HttpGet]
+        [Route("{name}")]
+        public async Task<IActionResult> GetCategoryId(string name)
+        {
+            var category = await _backendDbContext.Categories.FirstOrDefaultAsync(c => c.CategoryName == name);
+            return Ok(category.CategoryId);
+        }
     }
 }

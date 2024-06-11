@@ -17,10 +17,11 @@ namespace backend.Data
         public DbSet<Products> Products { get; set; }
 
         public DbSet<Categories> Categories { get; set; }
+        public DbSet<Orders> Orders { get; set; }
+        public DbSet<OrderProducts> OrderProducts { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            // Enable logging to console
             optionsBuilder.UseLoggerFactory(_loggerFactory);
 
             base.OnConfiguring(optionsBuilder);
@@ -36,12 +37,19 @@ namespace backend.Data
             modelBuilder.Entity<Products>().
                 HasKey(p => p.ProductId);
 
+            modelBuilder.Entity<Orders>().
+                HasKey(o => o.OrderId);
+
             modelBuilder.Entity<Addresses>()
                 .HasOne<Clients>()
                 .WithMany()
                 .HasForeignKey(a => a.Client_id);
 
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<OrderProducts>()
+            .HasKey(op => new { op.OrderId, op.ProductId });
+
+            modelBuilder.Entity<OrderProducts>()
+            .HasKey(op => new { op.OrderId, op.ProductId });
         }
 
     }

@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "F:\\NORBI\\project_licenta\\backend\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|f:\\norbi\\project_licenta\\backend\\backend\\backend\\controllers\\models\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|solutionrelative:backend\\controllers\\models\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|f:\\norbi\\project_licenta\\backend\\backend\\backend\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|solutionrelative:backend\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|f:\\norbi\\project_licenta\\backend\\backend\\backend\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|solutionrelative:backend\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|f:\\norbi\\project_licenta\\backend\\backend\\backend\\controllers\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|solutionrelative:backend\\controllers\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|f:\\norbi\\project_licenta\\backend\\backend\\backend\\data\\backenddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|solutionrelative:backend\\data\\backenddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|f:\\norbi\\project_licenta\\backend\\backend\\backend\\controllers\\models\\orderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|solutionrelative:backend\\controllers\\models\\orderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|f:\\norbi\\project_licenta\\backend\\backend\\backend\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|solutionrelative:backend\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|f:\\norbi\\project_licenta\\backend\\backend\\backend\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|solutionrelative:backend\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|f:\\norbi\\project_licenta\\backend\\backend\\backend\\controllers\\models\\orderproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|solutionrelative:backend\\controllers\\models\\orderproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 70,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,67 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Categories.cs",
-              "DocumentMoniker": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\Models\\Categories.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\Models\\Categories.cs",
-              "ToolTip": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\Models\\Categories.cs",
-              "RelativeToolTip": "backend\\Controllers\\Models\\Categories.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Orders.cs",
+              "DocumentMoniker": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\Models\\Orders.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\Models\\Orders.cs",
+              "ToolTip": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\Models\\Orders.cs",
+              "RelativeToolTip": "backend\\Controllers\\Models\\Orders.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T17:48:14.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClientsController.cs",
-              "DocumentMoniker": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\ClientsController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\ClientsController.cs",
-              "ToolTip": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\ClientsController.cs",
-              "RelativeToolTip": "backend\\Controllers\\ClientsController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwBoAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T10:00:10.464Z",
+              "WhenOpened": "2024-06-11T09:43:46.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BackendDbContext.cs",
-              "DocumentMoniker": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Data\\BackendDbContext.cs",
-              "RelativeDocumentMoniker": "backend\\Data\\BackendDbContext.cs",
-              "ToolTip": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Data\\BackendDbContext.cs",
-              "RelativeToolTip": "backend\\Data\\BackendDbContext.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAArwBoAAAAIAAAA",
+              "Title": "OrderRequest.cs",
+              "DocumentMoniker": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\Models\\OrderRequest.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\Models\\OrderRequest.cs",
+              "ToolTip": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\Models\\OrderRequest.cs",
+              "RelativeToolTip": "backend\\Controllers\\Models\\OrderRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T09:53:27.529Z",
+              "WhenOpened": "2024-06-11T09:25:56.957Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\ProductsController.cs",
-              "ToolTip": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "backend\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAYwBAAAAASAAAA",
+              "DocumentIndex": 3,
+              "Title": "OrderProducts.cs",
+              "DocumentMoniker": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\Models\\OrderProducts.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\Models\\OrderProducts.cs",
+              "ToolTip": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\Models\\OrderProducts.cs",
+              "RelativeToolTip": "backend\\Controllers\\Models\\OrderProducts.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T09:07:01.976Z",
+              "WhenOpened": "2024-06-11T09:25:55.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\CategoriesController.cs",
-              "ToolTip": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "backend\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAzwBwAAAAiAAAA",
+              "DocumentIndex": 0,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\OrdersController.cs",
+              "ToolTip": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "backend\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAADwvxEAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T09:48:55.325Z",
+              "WhenOpened": "2024-06-11T08:45:50.905Z",
               "EditorCaption": ""
             }
           ]
