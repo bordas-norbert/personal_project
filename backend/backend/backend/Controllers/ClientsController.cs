@@ -30,6 +30,10 @@ namespace backend.Controllers
         [HttpPost]
         public async Task<IActionResult> AddClient([FromBody] Clients clientRequest)
         {
+            if(clientRequest == null)
+            {
+                return BadRequest();
+            }
             await _backendDbContext.Clients.AddAsync(clientRequest);
             await _backendDbContext.SaveChangesAsync();
             return Ok(clientRequest);

@@ -7,10 +7,10 @@
             </section>
             Total: {{totalCartValue.toFixed(2)}}
             <br>
-            <input type="text" #input class="coupon-input">
+            <input type="text" #input class="coupon-input" placeholder="Coupon code...">
             <button class="v-button" (click)="validateCoupon(input.value)">Validate</button>
         </div>
-        <textarea class="area-size" maxlength="200" rows="8" cols="25" #comments></textarea>
+        <textarea class="area-size" maxlength="200" rows="8" cols="25" #comments placeholder="Comment..."></textarea>
         <button class="submit order-button" (click)="placeOrder(comments.value)">Place Order</button>
         <section class="alert-msg" *ngIf="!addressWasChosen && buttonWasTouched">Please choose a shipping address</section>
     </form>
@@ -18,6 +18,6 @@
         <section (click)="chooseAddress(address)" *ngFor="let address of clientAddresses">
             City: {{address.city}} Street: {{address.street}} Number: {{address.number}}
         </section>
-        <section [(ngModel)]="chosenAddress">Shipping Address: {{chosenAddress}}</section>
+        <section [ngClass]="{ 'danger-section': !addressWasChosen}" [(ngModel)]="chosenAddress">Shipping Address: {{chosenAddress}}</section>
     </div>
 </div>

@@ -1,3 +1,14 @@
 form {
     margin-top: 100px;
+    padding: 10px;
+}
+.container {
+    background-color: orange;
+    width: 230px;
+}
+button {
+    margin: 10 px;
+}
+input:last-child {
+    margin-bottom: 10px;
 }

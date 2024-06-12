@@ -3,15 +3,14 @@
     <li><a href="#" class="brand">Eshop</a></li>
     <li *ngIf="isAdminLoggedIn()"><a [routerLink]="['clients']">Clients</a></li>
     <li *ngIf="isAdminLoggedIn()"><a [routerLink]="['add-products']">Add Products</a></li>
-    <li *ngIf="isLoggedIn()"><a [routerLink]="['products']">Products</a></li>
+    <li *ngIf="isLoggedIn()"><a [routerLink]="['/']">Products</a></li>
     <li><a [routerLink]="['login']">Login</a></li>
     <li *ngIf="isLoggedIn()"><a [routerLink]="['addresses']">Adresses</a></li>
     <li><a *ngIf="!isLoggedIn()" [routerLink]="['signup']">Signup</a></li>
-    <li><a *ngIf="isLoggedIn()" [routerLink]="['spinning-wheel']">Wheel</a></li>
     
     <li class="spacer"></li>
     <li class="icon-container">
-      <img class ="user-icon" src="assets/navbar/usericon.png" alt="User icon">
+      <img class ="user-icon" src="assets/navbar/usericon.png" alt="User icon" [routerLink]="['login']">
     </li>
     <li *ngIf="isLoggedIn()">
       <img src="../../../assets/cart-icon.png" class="cart-icon" [routerLink]="['list-cart']">

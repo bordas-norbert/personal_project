@@ -4,3 +4,11 @@ button {
 .container {
     margin-top: 100px;
 }
+form {
+    background-color: whitesmoke;
+    width: 210px;
+    padding-left: 10px;
+}
+.danger-section {
+    background-color: red;
+}

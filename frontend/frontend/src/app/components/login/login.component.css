@@ -1,9 +1,18 @@
 form {
     margin-left: 110px;
     margin-top: 110px;
+    width: 13rem;
 }
 
 .lo-btn {
     margin-top: 110px;
     margin-left: 190px;
+}
+.login-form {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: orange;
+}
+input:last-child {
+    margin-bottom: 10px;
 }

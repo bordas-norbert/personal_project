@@ -46,3 +46,6 @@ button:v-button {
     display: block;
     margin-left: 0px;
 }
+.danger-section {
+    background-color: rgb(240, 177, 177);
+}

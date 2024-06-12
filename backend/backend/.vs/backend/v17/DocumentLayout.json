@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "F:\\NORBI\\project_licenta\\backend\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|f:\\norbi\\project_licenta\\backend\\backend\\backend\\controllers\\couponscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|solutionrelative:backend\\controllers\\couponscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|f:\\norbi\\project_licenta\\backend\\backend\\backend\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|solutionrelative:backend\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|f:\\norbi\\project_licenta\\backend\\backend\\backend\\controllers\\couponscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|solutionrelative:backend\\controllers\\couponscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45C764B2-E002-4C85-B419-23A5084208B5}|backend\\backend.csproj|f:\\norbi\\project_licenta\\backend\\backend\\backend\\data\\backenddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 70,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,13 +50,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ClientsController.cs",
               "DocumentMoniker": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\ClientsController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\ClientsController.cs",
-              "ToolTip": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\ClientsController.cs",
-              "RelativeToolTip": "backend\\Controllers\\ClientsController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAwwD0AAAAAAAAA",
+              "ToolTip": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\ClientsController.cs*",
+              "RelativeToolTip": "backend\\Controllers\\ClientsController.cs*",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCIAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T16:01:03.004Z",
               "EditorCaption": ""
@@ -71,8 +71,7 @@
               "RelativeToolTip": "backend\\Controllers\\Models\\Coupons.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T15:51:25.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-11T15:51:25.792Z"
             },
             {
               "$type": "Document",
@@ -84,18 +83,17 @@
               "RelativeToolTip": "backend\\Data\\BackendDbContext.cs",
               "ViewState": "AQIAACkAAAAAAAAAAAAQwDgAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T15:44:29.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-11T15:44:29.946Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CouponsController.cs",
               "DocumentMoniker": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\CouponsController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\CouponsController.cs",
               "ToolTip": "F:\\NORBI\\project_licenta\\backend\\backend\\backend\\Controllers\\CouponsController.cs",
               "RelativeToolTip": "backend\\Controllers\\CouponsController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwCQAAAAMAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T15:46:17.037Z",
               "EditorCaption": ""
@@ -134,8 +132,7 @@
               "RelativeToolTip": "backend\\Controllers\\Models\\OrderProducts.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T09:25:55.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-11T09:25:55.982Z"
             },
             {
               "$type": "Document",
@@ -147,8 +144,7 @@
               "RelativeToolTip": "backend\\Controllers\\OrdersController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T08:45:50.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-11T08:45:50.905Z"
             }
           ]
         },

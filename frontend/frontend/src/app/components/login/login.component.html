@@ -1,4 +1,4 @@
-<form #f="ngForm" 
+<form #f="ngForm" class="login-form" 
   *ngIf="!isLoggedIn; else logoutTemplate"
     (ngSubmit)="loginClient()">
     <div class="form-element">

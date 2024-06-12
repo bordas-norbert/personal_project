@@ -1,4 +1,13 @@
 .container{
+    display: grid;
+ 
     background-color: aliceblue;
     padding-top: 100px;
+    width: 215px;
 }
+
+.danger-section {
+    display: inline;
+    background-color: red;
+}
+

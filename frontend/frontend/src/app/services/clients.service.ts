@@ -41,7 +41,6 @@ export class ClientsService {
     return this.http.post<any>(this.baseApiUrl + '/api/clients/login', credentials)
     .pipe(
       tap( response => {
-        console.log(response);
         localStorage.setItem('userRole', response.userRole);
         localStorage.setItem('username', response.username);
         localStorage.setItem('clientId', response.clientId);

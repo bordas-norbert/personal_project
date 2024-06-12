@@ -5,26 +5,29 @@
   *ngIf="isLoggedIn && showComponent"  
   (ngSubmit)="addAddress()">
   <div class="form-element">
-    <label for="city">Enter your"city:</label>
+    <label for="city">Enter your city:</label>
     <section>
-      <input type="text" id="city"
+      <input #city="ngModel" type="text" id="city"
       name="city" [(ngModel)]="clientAddress.city">
     </section>
+    <section *ngIf="invalidCityName(city.value) && city.touched" class="danger-section">Invalid city name</section>
   </div>
   <div class="form-element">
     <label for="street">Enter your street:</label>
     <section>
-      <input type="text" id="street" name="inputField"
+      <input #street="ngModel" type="text" id="street" name="inputField"
       name="street" [(ngModel)]="clientAddress.street">
     </section>
+    <section *ngIf="invalidStreetName(street.value) && street.touched" class="danger-section">Invalid street name</section>
   </div>
   <div class="form-element">
     <label for="number">Enter your number:</label>
     <section>
-      <input type="number" id="number" name="inputField"
+      <input #number="ngModel" type="number" id="number" name="inputField"
       name="number" [(ngModel)]="clientAddress.number">
     </section>
+    <section *ngIf="invalidNumber(number.value) && number.touched" class="danger-section">Invalid number</section>
   </div>
-  <button class="submit">Add</button>
+  <button class="submit btn btn-primary">Add</button>
 </form>
 </div>

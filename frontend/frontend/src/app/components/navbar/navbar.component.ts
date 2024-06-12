@@ -15,7 +15,6 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class NavbarComponent {
   imageUrl: string = "usericon.jpg";
-  spinsRemaining: number = 0;
   private categoryArraySubject = new BehaviorSubject<Category[]>([])
   categoryNames: string[] = []
   cartCount: number = 0;
@@ -54,13 +53,18 @@ export class NavbarComponent {
   
   getClosestCategoryNames(input: string)
   {
+    if(input.length == 0)
+      this.refreshComponent()
     this.categoryNamesMatchingInput = this.trie.findAllWords(input)
-    console.log(this.categoryNamesMatchingInput)
   }
  
   checkUrl() {
     this.urlEndsWithProduct = this.router.url.endsWith('/products') || this.router.url.endsWith('/#') ||
     this.router.url.endsWith('/');
   }
-  
+  refreshComponent(): void {
+    this.router.navigateByUrl('/products', { skipLocationChange: true }).then(() => {
+      this.router.navigate(['/']);
+    });
+  }
 }
