@@ -45,7 +45,7 @@ export class OrderPlaceComponent {
     params.push(couponCode)
     this.couponsService.validateCoupon(params).subscribe({
       next: (result) => {
-        this.totalCartValue = this.totalCartValue - (this.totalCartValue / Number(result))
+        this.totalCartValue = this.totalCartValue - (this.totalCartValue * Number(result) / 100)
       },
       error: () => {
         alert('Coupon already used or not valid')

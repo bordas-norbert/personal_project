@@ -1,8 +1,9 @@
 <div class="navbar bg-color">
   <ul class="container">
-    <li><a href="#" class="brand">Eshop</a></li>
+    <li><a href="#" class="brand">Shop'N'Go</a></li>
     <li *ngIf="isAdminLoggedIn()"><a [routerLink]="['clients']">Clients</a></li>
     <li *ngIf="isAdminLoggedIn()"><a [routerLink]="['add-products']">Add Products</a></li>
+    <li><a *ngIf="isAdminLoggedIn()" [routerLink]="['add-category']">Add Category</a></li>
     <li *ngIf="isLoggedIn()"><a [routerLink]="['/']">Products</a></li>
     <li><a [routerLink]="['login']">Login</a></li>
     <li *ngIf="isLoggedIn()"><a [routerLink]="['addresses']">Adresses</a></li>
@@ -21,10 +22,7 @@
 
 <div *ngIf="urlEndsWithProduct" 
  class="sidebar d-flex flex-column bg-color" style="width: 180px; height: 100vh; position: fixed">
-    
-    
   <ul class="nav nav-pills flex-column mb-auto bg-color">
-   
     <li>
       <p class="fp"> Filters: </p>
       <p class="fp"> Category: </p>

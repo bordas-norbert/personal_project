@@ -8,10 +8,8 @@ export class FilterListproductsService {
 
   private categorySubject = new Subject<string>();
 
-  // Observable for the category
   category$ = this.categorySubject.asObservable();
-
-  // Method to emit a new category
+  
   setCategory(category: string) {
     this.categorySubject.next(category);
   }

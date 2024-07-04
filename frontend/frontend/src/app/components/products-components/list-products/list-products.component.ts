@@ -2,7 +2,6 @@ import { CartService } from './../../../services/cart.service';
 import { ProductsService } from 'src/app/services/products.service';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Product } from 'src/app/models/products.model';
-import { Dictionary } from 'src/app/models/Interfaces/Dictionary';
 import { CategoriesService } from 'src/app/services/categories.service';
 import { Subscription } from 'rxjs';
 import { FilterListproductsService } from 'src/app/services/filter-listproducts.service';

@@ -26,7 +26,6 @@ export class ListAddressesComponent {
   }
 
   updateAddress(){
-    console.log(this.editingAddress)
     this.addressService.updateAddress(this.editingAddress as Address).subscribe({
       next: (adr) => {
         this.router.navigate(['addresses'])

@@ -1,1 +1,15 @@
 
+<form class="first-column" #form="ngForm" (ngSubmit)="addCategory()">
+  
+    <div class="form-element">
+      <label for="username">Enter a new category:</label>
+      <section>
+        <input #cg="ngModel" type="text" id="category"
+        name="category" [(ngModel)]="category.categoryName">
+        </section>
+      <section *ngIf="invalidCategoryName(cg.value) && cg.touched" class="danger-section">Enter category</section>
+      <section *ngIf="errorMessage" class="danger-section">{{errorMessage}}</section>
+
+    </div>
+    <button class="submit">Add</button>
+</form>

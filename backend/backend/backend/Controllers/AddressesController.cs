@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace backend.Controllers
 {
-    [ApiController] //it won't be having any views
+    [ApiController] 
     [Route("api/[controller]")]
     public class AddressesController : Controller
     {

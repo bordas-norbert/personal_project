@@ -14,11 +14,16 @@ import { ListProductsComponent } from './components/products-components/list-pro
 import { ListCartComponent } from './components/shopping-cart/list-cart/list-cart.component';
 import { OrderPlaceComponent } from './components/order-place/order-place.component';
 import { SpinningWheelComponent } from './components/spinning-wheel/spinning-wheel.component';
+import { CategoryComponent } from './components/category/category.component';
 
 const routes: Routes = [
   {
     path: 'spinning-wheel',
     component: SpinningWheelComponent
+  },
+  {
+    path:'add-category',
+    component: CategoryComponent
   },
   {
     path: 'add-products',

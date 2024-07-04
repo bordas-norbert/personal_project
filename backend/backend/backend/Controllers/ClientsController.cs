@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 
 namespace backend.Controllers
 {
-    [ApiController] //it won't be having any views
+    [ApiController]
     [Route("api/[controller]")]
     public class ClientsController : Controller
     {
